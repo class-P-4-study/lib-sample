@@ -1,14 +1,12 @@
 {
-  "name": "@class_p/sample",
+  "name": "@class-p/lib-sample",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --progress --config webpack.config.js",
     "start": "npm run dev"
   },
   "author": "class-P",
-  "license": "MIT",
   "description": "",
   "volta": {
     "node": "18.16.0",

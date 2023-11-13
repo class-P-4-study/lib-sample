@@ -1,7 +1,7 @@
 import Func from '@class-p/appendwords'
 
-const hoge = () => {
-    console.log(Func.addFunc("htmlから呼んだでー", 123))
+const hoge = (fv, sv) => {
+    console.log(Func.addFunc(fv, sv))
 }
 
 window.hoge = hoge;

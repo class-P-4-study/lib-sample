@@ -5,9 +5,6 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    // library: {
-    //     type: 'module',
-    // },
     path: path.resolve(__dirname, 'src'),
   },
   module: {
@@ -19,26 +16,22 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: [
-              ['@babel/preset-env', { targets: "defaults" }] // .babelrc に設定
+              // .babelrc に設定
+              ['@babel/preset-env', { targets: "defaults" }]
             ]
           }
         }
       },
       {
-        // 拡張子 .ts の場合
+        // 拡張子.ts
         test: /\.ts$/,
-        // TypeScript をコンパイルする
         use: 'ts-loader',
       },
-      // { test: /\.json$/, type: 'json' },
     ],
   },
   resolve: {
     extensions: ['.ts', '.js'],
   },
-  // experiments: {
-  //   outputModule: true,
-  // },
   devServer: {
     static: {
       directory: path.join(__dirname, 'src'),
