@@ -1,6 +1,6 @@
-# 自作ライブラリのサンプルソース
+# 自作パッケージのサンプルソース
 
-## 🌐 対象ライブラリ URL
+## 🌐 対象パッケージ URL
 ### **https://www.npmjs.com/package/@class-p/appendwords**
 
 ## 💬 Usage
